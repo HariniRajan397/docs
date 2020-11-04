@@ -51,7 +51,11 @@ export const SearchButton = forwardRef((props: LinkProps, ref: Ref<HTMLDivElemen
       <Portal>
         <Fade in={isOpen}>
           {styles => (
-            <Box position="absolute" zIndex={9999} style={styles}>
+            <Box position="absolute" zIndex={9999} style={styles} css={(theme: Theme) => css({
+            '.DocSearch.DocSearch-Container':{
+              position:'fixed',
+              }
+            })(theme)}>
               <DocSearchModal
                 initialScrollY={window.scrollY}
                 {...(searchOptions as any)}
