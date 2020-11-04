@@ -16,9 +16,10 @@ import MenuIcon from 'mdi-react/MenuIcon';
 import CloseIcon from 'mdi-react/CloseIcon';
 import { useMobileMenuState } from '@common/hooks/use-mobile-menu';
 
-import { css, ForwardRefExoticComponentWithAs, forwardRefWithAs } from '@stacks/ui-core';
+import { ForwardRefExoticComponentWithAs, forwardRefWithAs } from '@stacks/ui-core';
 import NextLink from 'next/link';
 import { ColorModeButton } from '@components/color-mode-button';
+import { SearchButton } from '@components/search-button';
 import { PAGE_WIDTH } from '@common/constants';
 import { border, transition } from '@common/utils';
 import { getCapsizeStyles } from '@components/mdx/typography';
@@ -246,6 +247,7 @@ const Header = ({ hideSubBar, ...rest }: any) => {
             <Flex alignItems="center">
               <Navigation />
               <ColorModeButton />
+              <SearchButton />
               <MenuButton />
             </Flex>
           </Flex>

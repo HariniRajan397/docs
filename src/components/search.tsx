@@ -17,8 +17,6 @@ import { SearchIcon } from '@components/icons/search';
 import Router from 'next/router';
 import Link from 'next/link';
 import { getCapsizeStyles } from '@components/mdx/typography';
-import { css } from '@stacks/ui-core';
-import { border } from '@common/utils';
 
 const getLocalUrl = href => {
   const _url = new URL(href);
